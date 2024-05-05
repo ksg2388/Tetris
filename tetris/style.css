@@ -52,3 +52,118 @@ img {
   min-width: 100%;
   display: block;
 }
+
+#main {
+  display: flex;
+  height: 100vh;
+  min-height: 400px;
+  justify-content: center;
+  background-color: #0f0221;
+
+  #game-left {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 12px;
+
+    .block-hold {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+
+      div {
+        width: 30px;
+        height: 30px;
+      }
+
+      .block {
+        border: 1px solid rgb(205, 205, 205);
+      }
+    }
+
+    .game-score {
+      width: 180px;
+      height: 100px;
+      color: white;
+
+      .score-subtitle {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .score {
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  #game-center {
+    min-width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .game-board {
+      display: flex;
+      width: 300px;
+      height: 600px;
+      background-color: white;
+      flex-wrap: wrap;
+
+      div {
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgb(205, 205, 205);
+      }
+
+      .taken {
+        border: none;
+      }
+    }
+  }
+
+  #game-right {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 12px;
+
+    .block-next {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+
+      div {
+        width: 30px;
+        height: 30px;
+      }
+
+      .block {
+        border: 1px solid rgb(205, 205, 205);
+      }
+    }
+
+    .container-btn {
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+.block {
+  background-color: green;
+}
